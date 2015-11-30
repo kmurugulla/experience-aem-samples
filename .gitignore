@@ -1,12 +1,17 @@
-*.class
+.vlt
+.classpath
+.project
+.settings/
+target/
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+#Intellij
+.idea/
+*.iml
 
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+#vlt directories
+content/src/main/content/jcr_root/.content.xml
+content/src/main/content/jcr_root/apps/.content.xml
+content/src/main/content/jcr_root/etc/.content.xml
+content/src/main/content/jcr_root/etc/designs/.content.xml
+content/src/main/content/jcr_root/etc/clientlibs/.content.xml
+.pmd
