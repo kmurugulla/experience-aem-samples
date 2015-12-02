@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/experience-aem-samples"/>
+
+
+    <filter root="/etc/clientlibs/experience-aem-samples"/>
+
+
+    <filter root="/etc/designs/experience-aem-samples">
+        <include pattern="/etc/designs/experience-aem-samples/jcr:content"/>
+
+    </filter>
+
+</workspaceFilter>
