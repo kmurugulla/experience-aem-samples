@@ -1,4 +1,5 @@
 # Experience AEM Samples
+[![Build Status](https://travis-ci.org/kmurugulla/experience-aem-samples.svg?branch=master)](https://travis-ci.org/kmurugulla/experience-aem-samples)
 
 This a content package project generated using the AEM Multimodule Lazybones template.
 
