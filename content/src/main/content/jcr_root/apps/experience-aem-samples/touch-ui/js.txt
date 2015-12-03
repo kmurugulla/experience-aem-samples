@@ -1,0 +1,3 @@
+#base=js
+
+touchui-image-multifield.js
