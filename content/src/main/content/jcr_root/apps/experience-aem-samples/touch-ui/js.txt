@@ -1,3 +1,5 @@
 #base=js
 
+touchui-widgets-init.js
+touchui-multifield-node-store.js
 touchui-image-multifield.js
