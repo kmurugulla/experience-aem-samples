@@ -369,7 +369,7 @@
                                     <goal>pmd</goal>
                                     <goal>cpd</goal>
                                     <!-- build will fail on warnings -->
-                                    <goal>check</goal> 
+                                    <goal>check</goal>
                                 </goals>
                             </execution>
                         </executions>
@@ -469,5 +469,8 @@
     <modules>
         <module>bundle</module>
         <module>content</module>
+        
+        
+        <module>sitecontent</module>
     </modules>
 </project>
