@@ -3,7 +3,7 @@
         Class = window.Class,
         CUI = window.CUI,
         ExperienceAEM = {
-            GROUP: "experience-aem",
+            GROUP: "experience-aem-ip",
             TIM_FEATURE: "touchuiinsertimage",
             TIM_DIALOG: "touchuiinsertimagedialog",
             CONTENT_URL: "/apps/experience-aem-samples/dialogs/image-insert-popover.html",
@@ -13,7 +13,7 @@
     ExperienceAEM.TIM_UI_SETTING = ExperienceAEM.GROUP + "#" + ExperienceAEM.TIM_FEATURE;
 
     //extend toolbar builder to register insert image
-    ExperienceAEM.CuiToolbarBuilder = new Class({
+    CUI.rte.ui.cui.CuiToolbarBuilder = new Class({
         toString: "EAEMCuiToolbarBuilder",
 
         extend: CUI.rte.ui.cui.CuiToolbarBuilder,
@@ -57,7 +57,7 @@
     });
 
     //extend the CUI dialog manager to register popover dialog
-    ExperienceAEM.DialogManager = new Class({
+    CUI.rte.ui.cui.CuiDialogManager = new Class({
         toString: "EAEMDialogManager",
 
         extend: CUI.rte.ui.cui.CuiDialogManager,
@@ -84,11 +84,11 @@
         extend: CUI.rte.ui.cui.ToolkitImpl,
 
         createToolbarBuilder: function () {
-            return new ExperienceAEM.CuiToolbarBuilder();
+            return new CUI.rte.ui.cui.CuiToolbarBuilder();
         },
 
         createDialogManager: function (editorKernel) {
-            return new ExperienceAEM.DialogManager(editorKernel);
+            return new CUI.rte.ui.cui.CuiDialogManager(editorKernel);
         }
     });
 
