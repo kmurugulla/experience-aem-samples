@@ -469,8 +469,5 @@
     <modules>
         <module>bundle</module>
         <module>content</module>
-        
-        
-        <module>sitecontent</module>
     </modules>
 </project>

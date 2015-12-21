@@ -5,7 +5,7 @@
         Class = window.Class,
         CUI = window.CUI,
         REQUESTER = "requester",
-        GROUP = "experience-aem",
+        GROUP = "experience-aem-cp",
         COLOR_PICKER_FEATURE = "colorPicker",
         COLOR_PICKER_DIALOG = "colorPickerDialog",
         DIALOG_URL = "/apps/experience-aem-samples/dialogs/color-picker-popover/cq:dialog",
@@ -22,7 +22,7 @@
     }
 
     //extend the toolbar builder to register plugin icon in fullscreen mode
-    EAEMCuiToolbarBuilder = new Class({
+    CUI.rte.ui.cui.CuiToolbarBuilder = new Class({
         toString: "EAEMCuiToolbarBuilder",
 
         extend: CUI.rte.ui.cui.CuiToolbarBuilder,
@@ -57,7 +57,7 @@
     });
 
     //extend the CUI dialog manager to register popover dialog
-    EAEMDialogManager = new Class({
+    CUI.rte.ui.cui.CuiDialogManager = new Class({
         toString: "EAEMDialogManager",
 
         extend: CUI.rte.ui.cui.CuiDialogManager,
@@ -84,11 +84,11 @@
         extend: CUI.rte.ui.cui.ToolkitImpl,
 
         createToolbarBuilder: function () {
-            return new EAEMCuiToolbarBuilder();
+            return new CUI.rte.ui.cui.CuiToolbarBuilder();
         },
 
         createDialogManager: function (editorKernel) {
-            return new EAEMDialogManager(editorKernel);
+            return new CUI.rte.ui.cui.CuiDialogManager(editorKernel);
         }
     });
 
@@ -300,7 +300,7 @@
     var _ = window._,
         Class = window.Class,
         CUI = window.CUI,
-        SENDER = "experience-aem",
+        SENDER = "experience-aem-cp",
         REQUESTER = "requester",
         COLOR = "color",
         ADD_COLOR_BUT = "#EAEM_CP_ADD_COLOR",

@@ -4,3 +4,4 @@ touchui-widgets-init.js
 touchui-multifield-node-store.js
 touchui-image-multifield.js
 touchui-rte-color-picker.js
+touchui-rte-image-plugin.js
